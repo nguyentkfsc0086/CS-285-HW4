@@ -1,6 +1,11 @@
 package edu.bhcc;
 
-public class Weather {
+import java.io.Serializable;
+
+/**
+ * Implement Serializable to store and reuse the object whenever we need
+ */
+public class Weather implements Serializable {
     private float precipitation, temp_max, temp_min, wind;
     private String weather;
 
@@ -9,46 +14,6 @@ public class Weather {
         this.temp_max = temp_max;
         this.temp_min = temp_min;
         this.wind = wind;
-        this.weather = weather;
-    }
-
-    public float getPrecipitation() {
-        return precipitation;
-    }
-
-    public void setPrecipitation(float precipitation) {
-        this.precipitation = precipitation;
-    }
-
-    public float getTemp_max() {
-        return temp_max;
-    }
-
-    public void setTemp_max(float temp_max) {
-        this.temp_max = temp_max;
-    }
-
-    public float getTemp_min() {
-        return temp_min;
-    }
-
-    public void setTemp_min(float temp_min) {
-        this.temp_min = temp_min;
-    }
-
-    public float getWind() {
-        return wind;
-    }
-
-    public void setWind(float wind) {
-        this.wind = wind;
-    }
-
-    public String getWeather() {
-        return weather;
-    }
-
-    public void setWeather(String weather) {
         this.weather = weather;
     }
 
