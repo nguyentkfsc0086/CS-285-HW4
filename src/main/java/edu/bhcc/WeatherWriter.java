@@ -45,10 +45,10 @@ public class WeatherWriter {
             String[] line = scanner.nextLine().split(",");
 
             try {
-                float precipitation = Float.parseFloat(line[1]);
-                float temp_max = Float.parseFloat(line[2]);
-                float temp_min = Float.parseFloat(line[3]);
-                float wind = Float.parseFloat(line[4]);
+                double precipitation = Double.parseDouble(line[1]);
+                double temp_max = Double.parseDouble(line[2]);
+                double temp_min = Double.parseDouble(line[3]);
+                double wind = Double.parseDouble(line[4]);
                 /**
                  * Create a Weather object whenever the scanner scanned through a line
                  */
