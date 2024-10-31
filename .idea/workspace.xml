@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f4f8a5-f3df-484b-82e8-cc3f31a3806d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
