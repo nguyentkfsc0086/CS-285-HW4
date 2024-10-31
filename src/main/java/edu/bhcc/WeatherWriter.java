@@ -42,20 +42,27 @@ public class WeatherWriter {
          */
         Scanner scanner = new Scanner(weatherFile);
         while (scanner.hasNextLine()){
-                String[] line = scanner.nextLine().split(",");
-                float precipitation, temp_max, temp_min, wind;
-                precipitation = Float.parseFloat(line[1]);
-                temp_max = Float.parseFloat(line[2]);
-                temp_min = Float.parseFloat(line[3]);
-                wind = Float.parseFloat(line[4]);
+            String[] line = scanner.nextLine().split(",");
+
+            try {
+                float precipitation = Float.parseFloat(line[1]);
+                float temp_max = Float.parseFloat(line[2]);
+                float temp_min = Float.parseFloat(line[3]);
+                float wind = Float.parseFloat(line[4]);
                 /**
                  * Create a Weather object whenever the scanner scanned through a line
                  */
                 Weather weather = new Weather(precipitation,temp_max,temp_min,wind,line[5]);
-            /**
-             * Add new object to the array list after created
-             */
-            weatherArrayList.add(weather);
+                /**
+                 * Add new object to the array list after created
+                 */
+                weatherArrayList.add(weather);
+
+
+            } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+   ;
             }
         WeatherWriter writer = new WeatherWriter(rawfile,weatherArrayList);
         writer.write();
