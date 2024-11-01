@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Implement Serializable to store and reuse the object whenever we need
  */
-public class Weather implements Serializable {
+public class Weather implements Serializable, Comparable<Weather>{
     private double precipitation, temp_max, temp_min, wind;
     private String weather;
 
@@ -46,5 +46,23 @@ public class Weather implements Serializable {
                 ", wind=" + wind +
                 ", weather='" + weather + '\'' +
                 '}';
+    }
+
+    /**
+     *
+     * @param o the object to be compared.
+     * @return
+     */
+    @Override
+    public int compareTo(Weather o) {
+        if(this.precipitation == o.precipitation &&
+            this.temp_max == o.temp_max &&
+            this.temp_min == o.temp_min &&
+            this.wind == o.wind &&
+            this.weather.equals(o.weather)){
+        return 0;
+        }
+        return 1;
+
     }
 }

@@ -51,5 +51,7 @@ public class WeatherReader {
          */
      ArrayList<Weather> weatherArrayList = reader.getWeatherArrayList();
 
+     }
+
     }
-}
+
