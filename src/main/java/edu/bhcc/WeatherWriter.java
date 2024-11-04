@@ -26,7 +26,7 @@ public class WeatherWriter {
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         ObjectOutputStream objectOutStream = new ObjectOutputStream(fileOutputStream);
 
-        //  Write Products to File
+        //  Write weather to File
         objectOutStream.writeObject(weatherArrayList);
 
         //  Close when the process finish

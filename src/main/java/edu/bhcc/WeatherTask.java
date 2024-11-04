@@ -1,33 +1,30 @@
 package edu.bhcc;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+
+import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.WeakHashMap;
 
-public class WeatherThread implements Runnable{
-    /**
-     * Use Socket class so client is able to communicate with sever
-     * Use DataInputStream and DataOutputStream to reuse the object that stored in Serializable
-     */
+public class WeatherTask implements Runnable{
+
     private Socket socket;
-    private DataInputStream inputFromClient;
-    private DataOutputStream outputToClient;
+    private BufferedReader inputFromClient;
+    private ObjectOutputStream outputToClient;
 
-    /**
-     * Constructor
-     * @param socket
-     * @param inputFromClient
-     * @param outputToClient
-     */
-    public WeatherThread(Socket socket, DataInputStream inputFromClient, DataOutputStream outputToClient) throws IOException {
+    public WeatherTask(Socket socket) throws IOException, ClassNotFoundException {
         this.socket = socket;
-        this.inputFromClient = new DataInputStream(socket.getInputStream());
-        this.outputToClient = outputToClient;
+        InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream());
+        this.inputFromClient = new BufferedReader(inputStreamReader);
+        this.outputToClient = new ObjectOutputStream(socket.getOutputStream());
+
     }
+
 
     @Override
     public void run() {
+
 
 
     }

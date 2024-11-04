@@ -2,6 +2,7 @@ package edu.bhcc;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Read the serializable from the cvs file
@@ -33,6 +34,7 @@ public class WeatherReader {
     public ArrayList<Weather> getWeatherArrayList() {
         return weatherArrayList;
     }
+
 
     /**
      *

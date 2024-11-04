@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f4f8a5-f3df-484b-82e8-cc3f31a3806d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bhcc/WeatherReaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bhcc/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bhcc/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bhcc/WeatherWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2oDFoAnY0715iLYb62TYz84z1xG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,9 +45,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "branch1",
+    "git-widget-placeholder": "branch2",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/nguyentran/Library/Mobile Documents/com~apple~CloudDocs/Advance Java/HW4/src/main/java/edu/bhcc/Main.java"
+    "onboarding.tips.debug.path": "/Users/nguyentran/Library/Mobile Documents/com~apple~CloudDocs/Advance Java/HW4/src/main/java/edu/bhcc/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
